@@ -8,7 +8,7 @@
 
  User Should be able to access following resource : 
 
-1. ## Coding Resource  
+## 1. Coding Resource  
    
    1. Python
    2. HTML & CSS
@@ -31,7 +31,7 @@
    
    ```
     
-2. ##  Events for Students
+## 2.  Events for Students
 
     1. Developer Clubs and Meetups
     2. Conferences
@@ -51,7 +51,7 @@
 
     ```
 
-3. ## Student Programs 
+## 3. Student Programs 
     
     1. Fellowship Programs
 
@@ -72,7 +72,7 @@
 
 
 
-4. ## Hackathons
+## 4. Hackathons
 
 ```
 SCHEMA 
@@ -89,7 +89,7 @@ Country :
 ```
 
 
-5. ## Competiton
+## 5. Competiton
 
 ```
 SCHEMA
@@ -105,7 +105,7 @@ Country :
 
 ```
 
-#### Note - The Schema and Section Descibed Above are tentative. Suggestions are Welcome.
+### Note - The Schema and Section Descibed Above are tentative. Suggestions are Welcome.
 
 
 ## TODO 
