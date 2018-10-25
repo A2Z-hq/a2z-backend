@@ -8,7 +8,7 @@
 
  User Should be able to access following resource : 
 
-1. ## Coding Resource 
+1. ## Coding Resource  
    
    1. Python
    2. HTML & CSS
@@ -18,11 +18,38 @@
    6. Android Development
    7. Backend Development
    8. Frontend Development
+
+   ```
+   SCHEMA 
+   =======
+
+   Model Name : coding-resource
+
+   text : 'String' 
+   link : 'String'
+   dlevel : 'Begineers', 'Moderate', 'Experts'
+   
+   ```
     
 2. ##  Events for Students
 
     1. Developer Clubs and Meetups
     2. Conferences
+
+    ```
+    SCHEMA 
+    =======
+
+    Model Name : events
+    
+    text : String
+    link : String
+    place : String
+    country : String
+    event date : 'DATE' [String]
+    subscription : boolena 
+
+    ```
 
 3. ## Student Programs 
     
@@ -30,19 +57,26 @@
 
     ```
     SCHEMA
+    =======
+
+    text : 
+    link : 
+    place :
+    country :
+    TR(travel reimbursment) : 
 
     ```
 
     2. Scholarship
 
-    ```
-    SCHEMA 
 
-    ```
+
+
 4. ## Hackathons
 
 ```
-SCHEMA : 
+SCHEMA 
+=======
 
 Id : 
 Name : 
@@ -58,7 +92,8 @@ Country :
 5. ## Competiton
 
 ```
-SCHEMA : 
+SCHEMA
+=======
 
 Id : 
 Name : 
