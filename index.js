@@ -27,5 +27,5 @@ app.get('/', (req, res)=>{
 // start the server
 app.listen(port, () => {
     console.log("Server is listening on port: " + port)
-})
+});
 
