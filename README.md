@@ -8,7 +8,7 @@
 
  User Should be able to access following resource : 
 
-## 1. Coding Resource  
+## 1. Coding Resource  [DONE]
    
    1. Python
    2. HTML & CSS
@@ -37,7 +37,7 @@
 
    ```
     
-## 2.  Events for Students
+## 2.  Events for Students [TBD]
 
 #### 1. Developer Clubs and Meetups
 
@@ -54,13 +54,13 @@
     place : String
     country : String
     event date : 'DATE' [String]
-    subscription : boolena 
+    subscription : boolean
 
     ```
 
 ## 3. Student Programs 
     
-#### 1. Fellowship Programs
+#### 1. Fellowship Programs [DONE]
 
     ```
     SCHEMA
@@ -68,33 +68,38 @@
 
     Model Name - fellowship 
 
-    text : 
-    link : 
-    place :
-    country :
-    TR(travel reimbursment) : 
+    text : String
+    link : String
+    place : String
+    country : String
+    field : String
+    eligiblity : enum [Bachelors, Masters, PHD]
+    application deadline : DATE 
+    active : boolean
+    subscrbe : boolean
+    bookmark : boolean
+    online : boolean [Online or InPerson]
 
     ```
 
-#### 2. Scholarship
+#### 2. Scholarship [DONE]
 
-  ```
-    SCHEMA
-    =======
+```
+SCHEMA
+=======
 
-    Model Name - Scholarship
+Model Name - Scholarship
 
-    text : 
-    link : 
-    place :
-    country :
-    TR(travel reimbursment) : 
+text : String
+url : String
+field : String
+bookmark : boolean
+active : boolean
+subscribe : boolean
 
-    ```
+```
 
-
-
-## 4. Hackathons
+## 4. Hackathons [DONE]
 
 ```
 SCHEMA 
@@ -102,13 +107,18 @@ SCHEMA
 
 Model Name - Hackathon
 
-Id : 
-Name : 
-Domain : 
-Type : Online or In-Person
-Application Start Date : 
-Application End Date : 
-Country : 
+Name : String
+Domain : String
+url : String
+Type : Enum[Online or InPerson]
+Application Start Date : Date
+Application End Date : Date
+place : String
+Country : String
+TR : Enum[Yes, No, Partial]
+subscribe : boolean
+active : boolean
+bookmark : boolean
 
 ```
 
@@ -120,14 +130,18 @@ SCHEMA
 =======
 
 Model Name - Competition
-
-Id : 
-Name : 
-Domain : 
-Type : Online or In-Person
-Application Start Date : 
-Application End Date : 
-Country : 
+ 
+Name : String
+Domain : String
+url : String
+Type : Enum[Online or InPerson]
+Application Start Date : Date
+Application End Date : Date
+place : String
+Country : String
+subscribe : boolean
+active : boolean
+bookmark : boolean
 
 ```
 
@@ -140,5 +154,6 @@ Country :
 |--   |-------|--------|
 |1    |Structuring Database and Specifing the Section for Resources | In  Progress |
 |2    | Define Routes | InComplete | 
+|3 | Update User Authentication | InComplete |
 
 
