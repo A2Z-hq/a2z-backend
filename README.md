@@ -33,8 +33,9 @@
     
 ## 2.  Events for Students
 
-    1. Developer Clubs and Meetups
-    2. Conferences
+#### 1. Developer Clubs and Meetups
+
+#### 2. Conferences
 
     ```
     SCHEMA 
@@ -53,11 +54,13 @@
 
 ## 3. Student Programs 
     
-    1. Fellowship Programs
+#### 1. Fellowship Programs
 
     ```
     SCHEMA
     =======
+
+    Model Name - fellowship 
 
     text : 
     link : 
@@ -67,8 +70,21 @@
 
     ```
 
-    2. Scholarship
+#### 2. Scholarship
 
+  ```
+    SCHEMA
+    =======
+
+    Model Name - Scholarship
+
+    text : 
+    link : 
+    place :
+    country :
+    TR(travel reimbursment) : 
+
+    ```
 
 
 
@@ -77,6 +93,8 @@
 ```
 SCHEMA 
 =======
+
+Model Name - Hackathon
 
 Id : 
 Name : 
@@ -94,6 +112,8 @@ Country :
 ```
 SCHEMA
 =======
+
+Model Name - Competition
 
 Id : 
 Name : 
