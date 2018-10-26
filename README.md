@@ -48,7 +48,7 @@
     place : String
     country : String
     event date : 'DATE' [String]
-    subscription : boolena 
+    subscription : boolean
 
     ```
 
