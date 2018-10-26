@@ -23,12 +23,18 @@
    SCHEMA 
    =======
 
+   [Make one collection and filter by tags]
+
    Model Name : coding-resource
 
    text : 'String' 
-   link : 'String'
+   url : 'String'
    dlevel : 'Begineers', 'Moderate', 'Experts'
-   
+   tags : [enums]
+   bookmark  : boolean
+   active : boolean
+
+
    ```
     
 ## 2.  Events for Students
@@ -44,7 +50,7 @@
     Model Name : events
     
     text : String
-    link : String
+    url : String
     place : String
     country : String
     event date : 'DATE' [String]
@@ -133,5 +139,6 @@ Country :
 |S.No | Issue | Status | 
 |--   |-------|--------|
 |1    |Structuring Database and Specifing the Section for Resources | In  Progress |
-|2    | Define Routes | Incomplete | 
+|2    | Define Routes | InComplete | 
+
 
