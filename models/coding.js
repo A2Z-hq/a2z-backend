@@ -10,6 +10,25 @@ const CodingSchema = new Schema({
     },
     dlevel :{
         type : String
+    },
+    tags: {
+        type: String,
+        enum: [
+            'Python',
+            'HTML & CSS',
+            'JavaScript',
+            'Data Structure',
+            'Machine Learning & Deep Learning',
+            'Android Development',
+            'Backend Development',
+            'Frontend Development'
+        ]
+    },
+    bookmark: {
+        type: Boolean
+    },
+    active: {
+        type: Boolean
     }
 });
 
