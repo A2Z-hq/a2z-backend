@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const HackathonSchema = new Schema({
     title : {
@@ -16,10 +16,10 @@ const HackathonSchema = new Schema({
         enum: ['Online', 'InPerson']
     },
     applicationStateDate : {
-        type: Date
+        type: String
     },
     applicationEndDate : {
-        type: Date
+        type: String
     },
     place : {
         type: String
@@ -42,7 +42,7 @@ const HackathonSchema = new Schema({
     }
 })
 
-const HackathonModel = mongoose.model('hackathon', HackathonSchema)
-module.export = HackathonModel
+const HackathonModel = mongoose.model('hackathon', HackathonSchema);
+module.export = HackathonModel;
 
 

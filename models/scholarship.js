@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const ScholarshipSchema = new Schema({
     title : {
@@ -22,5 +22,5 @@ const ScholarshipSchema = new Schema({
     }
 })
 
-const ScholarshipModel = mongoose.Model('scholarship', ScholarshipSchema)
-module.exports = ScholarshipModel
+const ScholarshipModel = mongoose.model('scholarship', ScholarshipSchema);
+module.exports = ScholarshipModel;
