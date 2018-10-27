@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const FellowshipSchema = new Schema({
     title : {
@@ -22,7 +22,7 @@ const FellowshipSchema = new Schema({
         enum: ['Bachelors', 'Masters', 'PHD']
     },
     applicationDeadline :{
-        type: DATE
+        type: String
     },
     active :{
         type: Boolean
@@ -39,5 +39,5 @@ const FellowshipSchema = new Schema({
     }
 }) 
 
-const FellowshipModel = mongoose.Model('fellowship', FellowshipSchema)
-module.exports = FellowshipModel 
+const FellowshipModel = mongoose.model('fellowship', FellowshipSchema);
+module.exports = FellowshipModel;

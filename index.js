@@ -4,6 +4,7 @@ const morgan = require('morgan');
 
 const {mongoose} = require('./config/mongoose');
 const CodingResources = require('./models/coding');
+const api = require('./routes/api');
 
 // Defining port for server
 var port = process.env.PORT || 3001
@@ -25,17 +26,8 @@ app.get('/', (req, res)=>{
     res.json({ "message" : "Welcome to A2Z Resources backend"})
 });
 
-// POST - /coding 
-// Testing Initial Router
-app.post('/coding',(req, res, next)=>{
-   CodingResources.create({
-       text: req.body.text,
-       url : req.body.url,
-       dlevel : req.body.dlevel
-   }).then(function(coding){
-       res.send(coding);
-   }).catch(next);
-});
+//Initialise the routes
+app.use('/', api);
 
 // start the server
 app.listen(port, () => {

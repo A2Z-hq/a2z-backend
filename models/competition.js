@@ -17,10 +17,10 @@ const CompetitionSchema = new Schema({
         enum: ['Online','InPerson']
     },
     applicationStartDate :{
-        type: Date
+        type: String
     },
     applicationEndDate :{
-        type: Date
+        type: String
     },
     place :{
         type: String

@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const conferenceSchema = new Schema({
     title: {
@@ -15,12 +15,12 @@ const conferenceSchema = new Schema({
         type: String
     },
     eventDate: {
-        type: Date
+        type: String
     },
     subscription: {
         type: Boolean
     }
 })
 
-const ConferenceModel = mongoose.model('conference', conferenceSchema)
+const ConferenceModel = mongoose.model('conference', conferenceSchema);
 module.exports = ConferenceModel;
