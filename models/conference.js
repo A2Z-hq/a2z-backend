@@ -22,5 +22,5 @@ const conferenceSchema = new Schema({
     }
 })
 
-const ConferenceModel = mongoose.model('conferece', conferenceSchema)
-module.exports = ConferenceModel
+const ConferenceModel = mongoose.model('conference', conferenceSchema)
+module.exports = ConferenceModel;

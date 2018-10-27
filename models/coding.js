@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const CodingSchema = new Schema({
     text : {
-        type : String,
+        type : String
     },
     url :{
         type : String
@@ -17,6 +17,8 @@ const CodingSchema = new Schema({
             'Python',
             'HTML & CSS',
             'JavaScript',
+            'Git & Github',
+            'Databases',
             'Data Structure',
             'Machine Learning & Deep Learning',
             'Android Development',
