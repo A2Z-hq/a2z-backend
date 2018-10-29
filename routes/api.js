@@ -1,12 +1,13 @@
-const express = require('express');
-const router = express.Router();
+const express   = require('express');
+const router    = express.Router();
 
-const CodingResources = require('./../models/coding');
-const competition = require('./../models/competition');
-const conference = require('./../models/conference');
-const hackathon = require('./../models/hackathon');
-const fellowship = require('./../models/fellowship');
-const scholarship = require('./../models/scholarship');
+const CodingResources   = require('./../models/coding');
+const competition       = require('./../models/competition');
+const conference        = require('./../models/conference');
+const hackathon         = require('./../models/hackathon');
+const fellowship        = require('./../models/fellowship');
+const scholarship       = require('./../models/scholarship');
+
 
 //CODING RESOURCES
 
