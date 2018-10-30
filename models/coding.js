@@ -30,7 +30,8 @@ const CodingSchema = new Schema({
         type: Boolean
     },
     active: {
-        type: Boolean
+        type: Boolean,
+        default: true
     }
 });
 
