@@ -12,12 +12,23 @@ const Scholarship = require('../models/scholarship');
 
 // 1. POST /coding
 router.post('/coding',(req, res, next) => {
-    const { text, url, dlevel } = req.body
-    CodingResources.create({ text, url, dlevel })
+    const { text, url, dlevel, tags } = req.body
+    CodingResources.create({ text, url, dlevel, tags })
     .then(coding =>res.send(coding))
     .catch(next);
 });
+
+// 2. GET /coding
+
+router.get('/coding',(req, res, next)=>{
+    CodingResources.find({}).then((docs)=>{
+        res.send(docs);
+    },(e)=>{
+        if(e) return res.status(404).send(e);
+    });
+})
  
+//  Competition
 router.post('/competition', (req, res, next) => {
     const { title, domain, url, type, applicationStartDate, applicationEndDate, place, country } = req.body
     Competition.create({ title, domain, url, type, applicationStartDate, applicationEndDate, place, country })
@@ -25,6 +36,7 @@ router.post('/competition', (req, res, next) => {
     .catch(next);
 })
 
+// Conference 
 router.post('/conference', (req, res, next) => {
     const { title, url, place, country, eventDate } = req.body
     Conference.create({ title, url, place, country, eventDate })
@@ -32,6 +44,7 @@ router.post('/conference', (req, res, next) => {
     .catch(next);
 })
 
+// Hackathon
 router.post('/hackathon', (req, res, next) => {
     const { title, domain, url, type, applicationStartDate, applicationEndDate, place, country, TR } = req.body
     Hackathon.create({ title, domain, url, type, applicationStartDate, applicationEndDate, place, country, TR })
@@ -39,6 +52,7 @@ router.post('/hackathon', (req, res, next) => {
     .catch(next);
 })
 
+// Fellowship
 router.post('/fellowship', (req, res, next) => {
     const { title, link, place, country, field, applicationDeadline, online  } = req.body
     Fellowship.create({ title, link, place, country, field, applicationDeadline, online })
@@ -46,6 +60,7 @@ router.post('/fellowship', (req, res, next) => {
     .catch(next);
 })
 
+// Scholarship
 router.post('/scholarship', (req, res, next) => {
     const { title, url, field } = req.body
     Scholarship.create({ title, url, field })
