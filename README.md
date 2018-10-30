@@ -27,12 +27,12 @@
 
    Model Name : coding-resource
 
-   text : 'String' 
+   title : 'String' 
    url : 'String'
    dlevel : 'Begineers', 'Moderate', 'Experts'
    tags : [enums]
-   bookmark  : boolean
-   active : boolean
+   bookmark  : boolean [DEFAULT - false]
+   active : boolean [DEFAULT - true]
 
 
    ```
@@ -49,12 +49,13 @@
 
     Model Name : events
     
-    text : String
+    title : String
     url : String
     place : String
     country : String
     event date : 'DATE' [String]
-    subscription : boolean
+    subscription : boolean [DEFAULT - false]
+    active : [DEFAULT - true]
 
     ```
 
@@ -75,9 +76,9 @@
     field : String
     eligiblity : enum [Bachelors, Masters, PHD]
     application deadline : DATE 
-    active : boolean
-    subscrbe : boolean
-    bookmark : boolean
+    active : boolean  [DEFAULT - true]
+    subscribe : boolean [DEFAULT - false]
+    bookmark : boolean [DEFAULT - false]
     online : boolean [Online or InPerson]
 
     ```
@@ -131,7 +132,7 @@ SCHEMA
 
 Model Name - Competition
  
-Name : String
+title : String
 Domain : String
 url : String
 Type : Enum[Online or InPerson]

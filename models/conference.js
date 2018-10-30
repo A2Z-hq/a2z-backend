@@ -18,7 +18,16 @@ const conferenceSchema = new Schema({
         type: String
     },
     subscription: {
-        type: Boolean
+        type: Boolean,
+        default : false
+    },
+    active : {
+        type : Boolean,
+        default : true
+    },
+    bookmark : {
+        type : Boolean,
+        default : false
     }
 })
 

@@ -12,13 +12,16 @@ const ScholarshipSchema = new Schema({
         type: String
     },
     bookmark : {
-        type: Boolean
+        type: Boolean,
+        default : false
     },
     active : {
-        type: Boolean
+        type: Boolean,
+        default : true
     },
     subscribe : {
-        type: Boolean
+        type: Boolean,
+        default : false
     }
 })
 

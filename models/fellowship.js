@@ -25,13 +25,16 @@ const FellowshipSchema = new Schema({
         type: String
     },
     active :{
-        type: Boolean
+        type: Boolean,
+        default : true
     },
     subscribe :{
-        type: Boolean
+        type: Boolean,
+        default : false
     },
     bookmark :{
-        type: Boolean
+        type: Boolean,
+        default : false
     },
     // true - Online & false - InPerson
     online :{

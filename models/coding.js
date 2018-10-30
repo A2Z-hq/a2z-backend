@@ -8,7 +8,7 @@ const CodingSchema = new Schema({
     url :{
         type : String
     },
-    dlevel :{
+    diffcultyLevel :{
         type : String
     },
     tags: {
@@ -27,7 +27,8 @@ const CodingSchema = new Schema({
         ]
     },
     bookmark: {
-        type: Boolean
+        type: Boolean,
+        default : false
     },
     active: {
         type: Boolean,

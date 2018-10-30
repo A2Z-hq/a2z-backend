@@ -27,18 +27,22 @@ const HackathonSchema = new Schema({
     Country : {
         type: String
     },
-    TR : {
+    travelReimbursment : {
         type:String,
+        default : "No",
         enum: ['Yes','No','Partial']
     },
     subscribe : {
-        type: Boolean
+        type: Boolean,
+        default : false
     },
     active : {
-        type: Boolean
+        type: Boolean,
+        default : true
     },
     bookmark : {
-        type: Boolean
+        type: Boolean,
+        default : false
     }
 })
 

@@ -17,10 +17,10 @@ const CompetitionSchema = new Schema({
         enum: ['Online','InPerson']
     },
     applicationStartDate :{
-        type: String
+        type: Date
     },
     applicationEndDate :{
-        type: String
+        type: Date
     },
     place :{
         type: String
@@ -29,13 +29,16 @@ const CompetitionSchema = new Schema({
         type: String
     },
     subscribe :{
-        type: Boolean
+        type: Boolean,
+        default : false
     },
     active :{
-        type: Boolean
+        type: Boolean,
+        default : true
     },
     bookmark :{
-        type: Boolean
+        type: Boolean,
+        default : false
     },
 });
 
