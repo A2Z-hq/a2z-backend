@@ -32,13 +32,16 @@ const HackathonSchema = new Schema({
         enum: ['Yes','No','Partial']
     },
     subscribe : {
-        type: Boolean
+        type: Boolean,
+        default: false
     },
     active : {
-        type: Boolean
+        type: Boolean,
+        default: true
     },
     bookmark : {
-        type: Boolean
+        type: Boolean,
+        default: false
     }
 })
 

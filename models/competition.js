@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -29,13 +28,16 @@ const CompetitionSchema = new Schema({
         type: String
     },
     subscribe :{
-        type: Boolean
+        type: Boolean,
+        default: false
     },
     active :{
-        type: Boolean
+        type: Boolean,
+        default: true,
     },
     bookmark :{
-        type: Boolean
+        type: Boolean,
+        default: false
     },
 });
 

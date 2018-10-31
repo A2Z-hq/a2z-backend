@@ -27,7 +27,8 @@ const CodingSchema = new Schema({
         ]
     },
     bookmark: {
-        type: Boolean
+        type: Boolean,
+        default: false,
     },
     active: {
         type: Boolean,
