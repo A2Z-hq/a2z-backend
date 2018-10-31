@@ -27,9 +27,9 @@
 
    Model Name : coding-resource
 
-   title : 'String' 
+   text : 'String' 
    url : 'String'
-   dlevel : 'Begineers', 'Moderate', 'Experts'
+   diffcultyLevel : 'Begineers', 'Moderate', 'Experts'
    tags : [enums]
    bookmark  : boolean [DEFAULT - false]
    active : boolean [DEFAULT - true]
@@ -79,7 +79,7 @@
     active : boolean  [DEFAULT - true]
     subscribe : boolean [DEFAULT - false]
     bookmark : boolean [DEFAULT - false]
-    online : boolean [Online or InPerson]
+    online : boolean [Online or InPerson], Default - FALSE
 
     ```
 
@@ -108,8 +108,8 @@ SCHEMA
 
 Model Name - Hackathon
 
-Name : String
-Domain : String
+title : String
+domain : String
 url : String
 Type : Enum[Online or InPerson]
 Application Start Date : Date

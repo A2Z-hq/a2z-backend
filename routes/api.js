@@ -10,15 +10,15 @@ const Scholarship = require('../models/scholarship');
 
 //CODING RESOURCES
 
-// 1. POST /coding
+//  POST /coding
 router.post('/coding',(req, res, next) => {
-    const { text, url, dlevel, tags } = req.body
-    CodingResources.create({ text, url, dlevel, tags })
+    const { text, url, diffcultyLevel, tags } = req.body
+    CodingResources.create({ text, url, diffcultyLevel, tags })
     .then(coding =>res.send(coding))
     .catch(next);
 });
 
-// 2. GET /coding
+//  GET - /coding
 
 router.get('/coding',(req, res, next)=>{
     CodingResources.find({}).then((docs)=>{
@@ -28,7 +28,7 @@ router.get('/coding',(req, res, next)=>{
     });
 })
  
-//  Competition
+//  POST - /competition
 router.post('/competition', (req, res, next) => {
     const { title, domain, url, type, applicationStartDate, applicationEndDate, place, country } = req.body
     Competition.create({ title, domain, url, type, applicationStartDate, applicationEndDate, place, country })
@@ -36,7 +36,16 @@ router.post('/competition', (req, res, next) => {
     .catch(next);
 })
 
-// Conference 
+// GET - /competition
+router.get('/competition', (req, res,next)=>{
+    Competition.find({}).then((docs)=>{
+        res.send(docs);
+    },(e)=>{
+        if(e) return res.status(404).send(e);
+    });
+});
+
+// POST - /conference 
 router.post('/conference', (req, res, next) => {
     const { title, url, place, country, eventDate } = req.body
     Conference.create({ title, url, place, country, eventDate })
@@ -44,28 +53,67 @@ router.post('/conference', (req, res, next) => {
     .catch(next);
 })
 
-// Hackathon
+// GET - /conference
+router.get('/conference', (req, res,next)=>{
+    Conference.find({}).then((docs)=>{
+        res.send(docs);
+    },(e)=>{
+        if(e) return res.status(404).send(e);
+    });
+});
+
+
+// POST - /hackathon
 router.post('/hackathon', (req, res, next) => {
-    const { title, domain, url, type, applicationStartDate, applicationEndDate, place, country, TR } = req.body
-    Hackathon.create({ title, domain, url, type, applicationStartDate, applicationEndDate, place, country, TR })
+    const { title, domain, url, type, applicationStartDate, applicationEndDate, place, country, travelReimbursment } = req.body
+    Hackathon.create({ title, domain, url, type, applicationStartDate, applicationEndDate, place, country, travelReimbursment })
     .then(hackathon =>res.send(hackathon))
     .catch(next);
-})
+});
 
-// Fellowship
+// GET - /hackathon
+router.get('/hackathon', (req, res,next)=>{
+    Hackathon.find({}).then((docs)=>{
+        res.send(docs);
+    },(e)=>{
+        if(e) return res.status(404).send(e);
+    });
+});
+
+// POST - /fellowship
 router.post('/fellowship', (req, res, next) => {
-    const { title, link, place, country, field, applicationDeadline, online  } = req.body
-    Fellowship.create({ title, link, place, country, field, applicationDeadline, online })
+    const { title, link, place, country, field, eligiblity, applicationDeadline, online  } = req.body
+    Fellowship.create({ title, link, place, country, field, eligiblity, applicationDeadline, online })
     .then(fellowship =>res.send(fellowship))
     .catch(next);
-})
+});
 
-// Scholarship
+// GET - /fellowship
+router.get('/fellowship', (req, res,next)=>{
+    Fellowship.find({}).then((docs)=>{
+        res.send(docs);
+    },(e)=>{
+        if(e) return res.status(404).send(e);
+    });
+});
+
+
+// POST - /scholarship
 router.post('/scholarship', (req, res, next) => {
     const { title, url, field } = req.body
     Scholarship.create({ title, url, field })
     .then(scholarship =>res.send(scholarship))
     .catch(next);
-})
+});
+
+// GET - /scholarship
+router.get('/fellowship', (req, res,next)=>{
+    Scholarship.find({}).then((docs)=>{
+        res.send(docs);
+    },(e)=>{
+        if(e) return res.status(404).send(e);
+    });
+});
+
 
 module.exports = router;

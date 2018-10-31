@@ -22,7 +22,7 @@ const FellowshipSchema = new Schema({
         enum: ['Bachelors', 'Masters', 'PHD']
     },
     applicationDeadline :{
-        type: String
+        type: Date
     },
     active :{
         type: Boolean,
@@ -38,7 +38,8 @@ const FellowshipSchema = new Schema({
     },
     // true - Online & false - InPerson
     online :{
-        type: Boolean
+        type: Boolean,
+        default : false
     }
 }) 
 
