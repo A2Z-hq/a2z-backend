@@ -30,7 +30,7 @@ router.get('/coding',(req, res, next)=>{
  
 //  POST - /competition
 router.post('/competition', (req, res, next) => {
-    const { title, domain, url, applicationStartDate, applicationEndDate, place, country } = req.body
+    const { title, domain, url, type, applicationStartDate, applicationEndDate, place, country } = req.body
     Competition.create({ title, domain, url, type, applicationStartDate, applicationEndDate, place, country })
     .then(competition =>res.send(competition))
     .catch(next);
