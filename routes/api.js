@@ -12,9 +12,9 @@ const Scholarship = require('../models/scholarship');
 
 //  POST /coding
 router.post('/coding',(req, res, next) => {
-    const { text, url, diffcultyLevel, tags } = req.body
-    CodingResources.create({ text, url, diffcultyLevel, tags })
-    .then(coding =>res.send(coding))
+    const { title, url, diffcultyLevel, tags } = req.body
+    CodingResources.create({title, url, diffcultyLevel, tags})
+    .then((coding) => res.send(coding))
     .catch(next);
 });
 
@@ -30,7 +30,7 @@ router.get('/coding',(req, res, next)=>{
  
 //  POST - /competition
 router.post('/competition', (req, res, next) => {
-    const { title, domain, url, type, applicationStartDate, applicationEndDate, place, country } = req.body
+    const { title, domain, url, applicationStartDate, applicationEndDate, place, country } = req.body
     Competition.create({ title, domain, url, type, applicationStartDate, applicationEndDate, place, country })
     .then(competition =>res.send(competition))
     .catch(next);
