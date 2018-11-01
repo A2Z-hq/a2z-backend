@@ -3,17 +3,21 @@ const Schema = mongoose.Schema;
 
 const HackathonSchema = new Schema({
     title : {
-        type: String
+        type: String,
+        required:true
     },
     domain : {
-        type: String
+        type: String,
+        required:true
     },
     url : {
-        type: String
+        type: String,
+        required:true
     },
     type : {
         type: String,
-        enum: ['Online', 'InPerson']
+        enum: ['Online', 'InPerson'],
+        required:true
     },
     applicationStateDate : {
         type: String
@@ -22,10 +26,12 @@ const HackathonSchema = new Schema({
         type: String
     },
     place : {
-        type: String
+        type: String,
+        required:true
     },
     Country : {
-        type: String
+        type: String,
+        required:true
     },
     travelReimbursment : {
         type:String,

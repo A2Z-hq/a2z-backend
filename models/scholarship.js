@@ -3,13 +3,16 @@ const Schema = mongoose.Schema;
 
 const ScholarshipSchema = new Schema({
     title : {
-        type: String
+        type: String,
+        required:true
     },
     url : {
-        type: String
+        type: String,
+        required:true
     },
     field : {
-        type: String
+        type: String,
+        required:true
     },
     bookmark : {
         type: Boolean,

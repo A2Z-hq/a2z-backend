@@ -3,10 +3,12 @@ const Schema = mongoose.Schema;
 
 const CodingSchema = new Schema({
     title : {
-        type : String
+        type : String,
+        required:true
     },
     url :{
-        type : String
+        type : String,
+        required:true
     },
     diffcultyLevel :{
         type : String

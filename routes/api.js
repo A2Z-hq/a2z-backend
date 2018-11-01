@@ -12,8 +12,8 @@ const Scholarship = require('../models/scholarship');
 
 //  POST /coding
 router.post('/coding',(req, res, next) => {
-    const { text, url, diffcultyLevel, tags } = req.body
-    CodingResources.create({ text, url, diffcultyLevel, tags })
+    const { title, url, diffcultyLevel, tags } = req.body
+    CodingResources.create({ title, url, diffcultyLevel, tags })
     .then(coding =>res.send(coding))
     .catch(next);
 });
