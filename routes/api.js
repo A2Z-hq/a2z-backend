@@ -7,6 +7,8 @@ const Conference = require('../models/conference');
 const Hackathon = require('../models/hackathon');
 const Fellowship = require('../models/fellowship');
 const Scholarship = require('../models/scholarship');
+const OpenSourcePrograms  = require('../models/soc-programs');
+const TopCharts = require('../models/topcharts');
 
 //CODING RESOURCES
 
@@ -115,5 +117,16 @@ router.get('/fellowship', (req, res,next)=>{
     });
 });
 
+
+// POST - /open-source-programs
+router.post('/open-source-programs', (req, res, next)=>{
+
+});
+
+// GET - /open-source-programs
+
+router.get('/open-source-programs', (req, res, next)=>{
+    
+});
 
 module.exports = router;
