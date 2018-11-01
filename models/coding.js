@@ -11,7 +11,8 @@ const CodingSchema = new Schema({
         required:true
     },
     diffcultyLevel :{
-        type : String
+        type : String,
+        required : true
     },
     tags: {
         type: String,
@@ -26,7 +27,8 @@ const CodingSchema = new Schema({
             'Android Development',
             'Backend Development',
             'Frontend Development'
-        ]
+        ],
+        required : true
     },
     bookmark: {
         type: Boolean,
