@@ -4,17 +4,21 @@ const Schema = mongoose.Schema;
 
 const CompetitionSchema = new Schema({
     title :{
-        type: String
+        type: String,
+        required:true
     },
     domain :{
-        type: String
+        type: String,
+        required:true
     },
     url :{
-        type: String
+        type: String,
+        required:true
     },
     type :{
         type:String,
-        enum: ['Online','InPerson']
+        enum: ['Online','InPerson'],
+        required:true
     },
     applicationStartDate :{
         type: Date
@@ -23,10 +27,12 @@ const CompetitionSchema = new Schema({
         type: Date
     },
     place :{
-        type: String
+        type: String,
+        required:true
     },
     Country :{
-        type: String
+        type: String,
+        required:true
     },
     subscribe :{
         type: Boolean,

@@ -3,19 +3,24 @@ const Schema = mongoose.Schema;
 
 const conferenceSchema = new Schema({
     title: {
-        type: String
+        type: String,
+        required:true
     },
     url: {
-        type: String
+        type: String,
+        required:true
     },
     place: {
-        type: String
+        type: String,
+        required:true
     },
     country: {
-        type: String
+        type: String,
+        required:true
     },
     eventDate: {
-        type: String
+        type: String,
+        required:true
     },
     subscription: {
         type: Boolean,

@@ -4,11 +4,11 @@ const Schema = mongoose.Schema;
 const CodingSchema = new Schema({
     title : {
         type : String,
-        required : true
+        required:true
     },
     url :{
-        type : String, 
-        required : true
+        type : String,
+        required:true
     },
     diffcultyLevel :{
         type : String,

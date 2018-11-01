@@ -3,19 +3,24 @@ const Schema = mongoose.Schema;
 
 const FellowshipSchema = new Schema({
     title : {
-        type: String
+        type: String,
+        required:true
     },
     link :{
-        type: String
+        type: String,
+        required:true
     },
     place :{
-        type: String
+        type: String,
+        required:true
     },
     country :{
-        type: String
+        type: String,
+        required:true
     },
     field :{
-        type: String
+        type: String,
+        required:true
     },
     eligiblity :{
         type:String,
