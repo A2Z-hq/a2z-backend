@@ -32,5 +32,5 @@ const OpenSourceProgramSchema = new Schema({
     }
 });
 
-const OpenSourcePrograms = mongoose.model('coding', OpenSourceProgramSchema);
+const OpenSourcePrograms = mongoose.model('soc', OpenSourceProgramSchema);
 module.exports = OpenSourcePrograms;
