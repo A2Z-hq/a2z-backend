@@ -148,13 +148,3 @@ bookmark : boolean
 
 ### Note - The Schema and Section Descibed Above are tentative. Suggestions are Welcome.
 
-
-## TODO 
-
-|S.No | Issue | Status | 
-|--   |-------|--------|
-|1    |Structuring Database and Specifing the Section for Resources | In  Progress |
-|2    | Define Routes | InComplete | 
-|3 | Update User Authentication | InComplete |
-
-
