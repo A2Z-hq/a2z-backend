@@ -1,16 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
-
+const ejs = require('ejs');
 const {mongoose} = require('./config/mongoose');
-const CodingResources = require('./models/coding');
 const api = require('./routes/api');
+const godmode = require('./admin/index');
 
 // Defining port for server
 var port = process.env.PORT || 3001
 
 //Initialise express app
-const app = express()
+const app = express();
 
 // parser request of content type  - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended : true}))
@@ -28,6 +28,7 @@ app.get('/', (req, res)=>{
 
 //Initialise the routes
 app.use('/', api);
+app.use('/admin', godmode );
 
 // start the server
 app.listen(port, () => {

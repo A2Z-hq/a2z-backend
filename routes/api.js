@@ -21,7 +21,6 @@ router.post('/coding',(req, res, next) => {
 });
 
 //  GET - /coding
-
 router.get('/coding',(req, res, next)=>{
     CodingResources.find({}).then((docs)=>{
         res.send(docs);
