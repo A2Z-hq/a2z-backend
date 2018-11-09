@@ -12,6 +12,10 @@ var port = process.env.PORT || 3001
 //Initialise express app
 const app = express();
 
+//View Engine
+app.set('view engine', 'ejs');
+app.use(express.static('./public'));
+
 // parser request of content type  - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended : true}))
 app.use(bodyParser.json())
@@ -28,7 +32,7 @@ app.get('/', (req, res)=>{
 
 //Initialise the routes
 app.use('/', api);
-app.use('/admin', godmode );
+app.use('/admin', godmode);
 
 // start the server
 app.listen(port, () => {

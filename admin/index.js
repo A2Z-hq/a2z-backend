@@ -12,6 +12,7 @@ router.get('/a2zhq',(req, res, next)=>{
     res.render('index');
 });
 
+
 router.get('/test', (req, res)=>{
     res.send({"message" : "Welcome to Test GOD MODE"})
 });
