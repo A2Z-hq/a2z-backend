@@ -12,14 +12,16 @@ router.get('/a2zhq',(req, res, next)=>{
     res.render('index');
 });
 
-router.get('/dashboard',(req, res, next)=>{
-    // res.sendFile('index.html', {root: './admin/public'});
-    // next();
-    res.render('dashboard');
-});
 
-router.post('/login', (req, res)=>{
-    console.log(req);
+router.post('/a2zhq', (req, res)=>{
+    
+    var username = req.body.username;
+    var password = req.body.password;
+
+    if(username,password != null && username === 'admin@a2zhq' && password === 'admin'){
+        //login sucsess
+        res.render('dashboard');
+    }
 });
 
 router.get('/test', (req, res)=>{
