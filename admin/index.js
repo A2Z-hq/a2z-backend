@@ -24,6 +24,11 @@ router.post('/a2zhq', (req, res)=>{
     }
 });
 
+router.post('/dashboard', (req, res, next) => {
+    var title = req.body.title;
+    console.log(title);
+});
+
 router.get('/test', (req, res)=>{
     res.send({"message" : "Welcome to Test GOD MODE"})
 });
