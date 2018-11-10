@@ -24,25 +24,86 @@
 
   <div class="tab-content">
     
+    <!-- Start of home section  -->
+
     <div id="home" class="tab-pane fade in active">
       <h3>HOME</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     
+    <!-- end of home section -->
+
+    <!-- Start of coding section  -->
+
     <div id="coding" class="tab-pane fade">
-      <h3>Coding Resources</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h3>Add Coding Resources</h3>
+
+      <div class="form-group">
+        <label for="inputsm">Title</label>
+        <input class="form-control input-sm" id="inputsm" name="title" type="text" required="true">
+      </div>
+
+      <div class="form-group">
+        <label for="inputsm">URL</label>
+        <input class="form-control input-sm" id="inputsm" type="url" name="url" required="true">
+      </div>
+
+      <div class="form-group">
+        <label for="sel1">Difficulty Level</label>
+        <select class="form-control" id="sel1" name="difficulty">
+          <option>Beginners</option>
+          <option>Moderate</option>
+          <option>Expert</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="select-tag">Choose Resource Tag</label>
+        <select class="form-control" id="select-tag" name="tag">
+          <option>Python </option>
+          <option> HTML & CSS</option>
+          <option>JavaScript </option>
+          <option>Git & Github </option>
+          <option>Data Structure </option>
+          <option>Machine Learning</option>
+          <option>Deep Learning </option>
+          <option>Android Development </option>
+          <option>iOS Development </option>
+          <option>Backend Development </option>
+          <option>Frontend Development </option>
+          <option>Core CS</option>
+          
+        </select>
+      </div>
+      
     </div>
-    
+
+    <!-- End of coding section -->
+
+    <!-- END OF CODING Resources -->
+
+     <!-- START OF Hackathons SECTION  -->
+
     <div id="hackathon" class="tab-pane fade">
       <h3>Competitons and Hackathons</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+      <div class="md-form">
+        <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
+        <label for="date-picker-example">Try me...</label>
+      </div>
+
     </div>
     
+    <!-- END OF Hackathons SECTION -->
+
+    <!-- START OF Scholarship -->
+
     <div id="scholarship" class="tab-pane fade">
       <h3>Scholarship and Fellowship Programs</h3>
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
+
+    <!-- END OF Scholarship -->
     
     <div id="startup" class="tab-pane fade">
       <h3>Startup Programs</h3>
@@ -67,8 +128,9 @@ $(document).ready(function(){
     $(".nav-tabs a").click(function(){
         $(this).tab('show');
     });
+
+    $('.datepicker').pickadate();
 });
 </script>
-
 </body>
 </html>
