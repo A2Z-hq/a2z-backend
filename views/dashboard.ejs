@@ -14,14 +14,15 @@
   <h2>GOD Mode</h2>
   
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#home">Home</a></li>
-    <li><a href="#coding">Coding Resources</a></li>
+    <li class="active"><a href="#coding">Coding Resources</a></li>
     <li><a href="#hackathon"> Hackathons </a></li>
     <li><a href="#fellowships">Fellowships</a></li>
-    <li><a href="#startup">Startup Programs</a></li>
+    <li><a href="#bootcamps">BootCamps</a></li>
     <li><a href="#conferences">Conferences</a></li>
-    <li><a href="#topcharts">Top Charts</a></li>
     <li><a href="#community"> Developer Communities</a></li>
+    <li><a href="#competiton">Competitons</a></li>
+    <li><a href="#topcharts">Top Charts</a></li>
+
   </ul>
 
   <div class="tab-content">
@@ -249,6 +250,8 @@
 
     <!-- End of conference section -->
 
+    <!-- Start of Commmunity Section -->
+
     <div id="community" class="tab-pane fade">
         <h3>Developer Community</h3>
   
@@ -279,17 +282,134 @@
   
         <button type="submit" class="btn btn-success">Upload Data</button>
     </div>
-      
-    <div id="startup" class="tab-pane fade">
-        <h3>Startup Programs</h3>
-    </div>
-    
-    <div id="topcharts" class="tab-pane fade">
-      <h3>Top Charts</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+    <!-- End of Commmunity Section -->
+
+    <!-- Start of Competiton Section -->
+
+    <div id="competiton" class="tab-pane fade">
+        <h3>Competitons</h3>
+
+        <div class="form-group">
+            <label for="inputsm">Title</label>
+            <input class="form-control" id="inputsm" name="title" type="text" required="true">
+        </div>
+
+        <div class="form-group">
+            <label for="inputsm">URL</label>
+            <input class="form-control" id="inputsm" name="url" type="url" required="true">
+        </div>
+
+        <div class="form-group">
+            <label for="select-tag">Location</label>
+            <select class="form-control" id="select-tag" name="location">
+              <option>Online</option>
+              <option>Onsite</option>
+              <option>Online & Onsite</option>            
+            </select>
+        </div>      
+  
+
+        <div class="form-group">
+            <label for="select-tag">Field</label>
+            <select class="form-control" id="select-tag" name="field">
+              <option>Technology</option>
+              <option>Business</option>
+              <option>Entrepreneurship</option>
+              <option>Ideathon</option>
+              <option>Design</option>
+              <option>Mechanical</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="btn btn-success">Upload Data</button>
+
     </div>
 
-  
+    <!-- End of Competiton Section -->
+
+    <!-- Start of BootCamp    -->
+    <div id="bootcamps" class="tab-pane fade">
+        <h3>Startup Programs and BootCamps</h3>
+
+        <div class="form-group">
+            <label for="inputsm">Title</label>
+            <input class="form-control" id="inputsm" name="title" type="text" required="true">
+        </div>
+
+        <div class="form-group">
+            <label for="inputsm">URL</label>
+            <input class="form-control" id="inputsm" name="url" type="url" required="true">
+        </div>
+
+        <div class="form-group">
+            <label for="inputsm">Location</label>
+            <input class="form-control" id="inputsm" name="location" type="text" required="true">
+        </div>
+
+       
+        <div class="form-group">
+            <label for="select-tag">Scholarship</label>
+            <select class="form-control" id="select-tag" name="scholarship">
+              <option>Yes</option>
+              <option>No</option>
+              <option>Partial</option>
+              <option>Case by Case Basis</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="select-tag">Field</label>
+            <select class="form-control" id="select-tag" name="field">
+              <option>Technology</option>
+              <option>Entrepreneurship</option>
+              <option>Design</option>
+              <option>Others</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Upload Data</button>
+
+
+    </div>
+    <!-- End of BootCamp -->
+    
+    <!-- Start of topcharts -->
+    <div id="topcharts" class="tab-pane fade">
+     
+      <h3>Top Charts</h3>
+          
+      <div class="form-group">
+              <label for="inputsm">Title</label>
+              <input class="form-control" id="inputsm" name="title" type="text" required="true">
+          </div>
+
+          <div class="form-group">
+              <label for="inputsm">Links</label>
+              <input class="form-control" id="inputsm" name="url" type="url" required="true">
+          </div>
+
+          <div class="form-group">
+              <label for="inputsm">Description</label>
+              <input class="form-control" id="inputsm" name="description" type="text" required="true">
+          </div>
+
+        
+          <div class="form-group">
+              <label for="select-tag">Category</label>
+              <select class="form-control" id="select-tag" name="category">
+                <option>Person</option>
+                <option>Website</option>
+                <option>Book</option>
+                <option>Blogs</option>
+                <option>Others</option>
+              </select>
+          </div>
+
+          <button type="submit" class="btn btn-success">Upload Data</button>    
+    </div>
+
+    <!-- End of topcharts -->
 
   </div>
 

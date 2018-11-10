@@ -8,13 +8,21 @@ const TopChartSchema = new Schema({
     },
     url : {
         type : String,
-        require : true
+        required : true
+    },
+    description : {
+        type : String,
+        required : true
     },
     category :{
         type : String, 
         required : true,
         enum : [
-
+            'Person',
+            'Website',
+            'Books',
+            'Blogs',
+            'Others'
         ],
     },
     bookmark : {

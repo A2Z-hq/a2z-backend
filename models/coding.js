@@ -16,18 +16,21 @@ const CodingSchema = new Schema({
     },
     tags: {
         type: String,
-        enum: [
-            'Python',
-            'HTML & CSS',
-            'JavaScript',
-            'Git & Github',
-            'Databases',
-            'Data Structure',
-            'Machine Learning & Deep Learning',
-            'Android Development',
-            'Backend Development',
-            'Frontend Development'
-        ],
+        // enum: [
+        //     'Python',
+        //     'HTML & CSS',
+        //     'JavaScript',
+        //     'Git & Github',
+        //     'Databases',
+        //     'Data Structure',
+        //     'Machine Learning',
+        //     'Deep Learning',
+        //     'Android Development',
+        //     'iOS Development',
+        //     'Backend Development',
+        //     'Frontend Development',
+        //     'Core CS'
+        // ],
         required : true
     },
     bookmark: {
