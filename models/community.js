@@ -1,13 +1,13 @@
 /**
- * Schema for Fellowship Community
- * Author : Deepak Kumar (@dipakkr)
+ * Schema for Developer Community
+ * Author : Deepak Kumar
  * Date : 11/11/18
  */
 
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const FellowshipSchema = new Schema({
+const CommunitySchema = new Schema({
     title : {
         type: String,
         required:true
@@ -18,14 +18,10 @@ const FellowshipSchema = new Schema({
     },
     location :{
         type: String,
-        required:true
     },
-    eligiblity :{
+    type:{
         type:String,
         required : true
-    },
-    date :{
-        type: Date
     },
     active :{
         type: Boolean,
@@ -41,5 +37,5 @@ const FellowshipSchema = new Schema({
     }
 });
 
-const FellowshipModel = mongoose.model('fellowship', FellowshipSchema);
-module.exports = FellowshipModel;
+const CommunityModel = mongoose.model('community', CommunitySchema);
+module.exports = CommunityModel;
