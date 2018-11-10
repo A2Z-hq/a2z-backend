@@ -83,8 +83,6 @@
       
     </div>
 
-    <!-- End of coding section -->
-
     <!-- END OF CODING Resources -->
 
      <!-- START OF Hackathons SECTION  -->
@@ -92,10 +90,52 @@
     <div id="hackathon" class="tab-pane fade">
       <h3>Competitons and Hackathons</h3>
 
-      <div class="md-form">
-        <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
-        <label for="date-picker-example">Try me...</label>
-      </div>
+      <form action="#" method="POST">
+
+        <div class="form-container">
+
+             <div class="form-group">
+                <label for="inputsm">Title</label>
+                <input class="form-control" id="inputsm" name="title" type="text" required="true">
+              </div>
+
+              <div class="form-group">
+                  <label for="inputsm">URL</label>
+                  <input class="form-control" id="inputsm" name="url" type="url" required="true">
+              </div>
+
+              <div class="form-group">
+                  <label for="inputsm">Location</label>
+                  <input class="form-control" id="inputsm" name="url" type="url" required="true">
+              </div>
+  
+              <div class="form-group">
+                  <label for="inputsm">Submission Date</label>
+                  <input class="form-control" id="inputsm" name="url" type="date" required="true">
+              </div>
+               
+              <div class="form-group">
+                  <label for="select-tag">Type</label>
+                  <select class="form-control" id="select-tag" name="type">
+                    <option>Online</option>
+                    <option>In-person</option> 
+                  </select>
+              </div>
+
+              <div class="form-group">
+                  <label for="select-tag">Travel Reimbursment</label>
+                  <select class="form-control" id="select-tag" name="ta">
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option>Partial</option> 
+                  </select>
+              </div>
+
+              <button type="submit" class="btn btn-warning">Upload Data</button>
+
+        </div>
+
+      </form>
 
     </div>
     
@@ -134,8 +174,8 @@ $(document).ready(function(){
         $(this).tab('show');
     });
 
-    $('.datepicker').pickadate();
 });
+
 </script>
 </body>
 </html>

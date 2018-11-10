@@ -25,8 +25,8 @@ router.post('/a2zhq', (req, res)=>{
 });
 
 router.post('/dashboard', (req, res, next) => {
-    var title = req.body.title;
-    console.log(title);
+   console.log(req.body.difficulty);
+   console.log(req.body.tag);
 });
 
 router.get('/test', (req, res)=>{

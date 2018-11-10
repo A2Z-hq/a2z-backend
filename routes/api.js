@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 
 const CodingResources = require('../models/coding');
-const Competition = require('../models/competition');
 const Conference = require('../models/conference');
 const Hackathon = require('../models/hackathon');
 const Fellowship = require('../models/fellowship');
@@ -29,23 +28,6 @@ router.get('/coding',(req, res, next)=>{
     });
 })
  
-//  POST - /competition
-router.post('/competition', (req, res, next) => {
-    const { title, domain, url, type, applicationStartDate, applicationEndDate, place, country } = req.body
-    Competition.create({ title, domain, url, type, applicationStartDate, applicationEndDate, place, country })
-    .then(competition =>res.send(competition))
-    .catch(next);
-})
-
-// GET - /competition
-router.get('/competition', (req, res,next)=>{
-    Competition.find({}).then((docs)=>{
-        res.send(docs);
-    },(e)=>{
-        if(e) return res.status(404).send(e);
-    });
-});
-
 // POST - /conference 
 router.post('/conference', (req, res, next) => {
     const { title, url, place, country, eventDate } = req.body

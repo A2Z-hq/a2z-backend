@@ -6,37 +6,23 @@ const HackathonSchema = new Schema({
         type: String,
         required:true
     },
-    domain : {
-        type: String,
-        required:true
-    },
     url : {
         type: String,
         required:true
     },
     type : {
         type: String,
-        enum: ['Online', 'InPerson'],
         required:true
     },
-    applicationStateDate : {
+    date : {
         type: String
     },
-    applicationEndDate : {
-        type: String
-    },
-    place : {
-        type: String,
-        required:true
-    },
-    Country : {
+    location : {
         type: String,
         required:true
     },
     travelReimbursment : {
         type:String,
-        default : "No",
-        enum: ['Yes','No','Partial']
     },
     subscribe : {
         type: Boolean,
