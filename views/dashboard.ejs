@@ -12,27 +12,19 @@
 
 <div class="container">
   <h2>GOD Mode</h2>
+  
   <ul class="nav nav-tabs">
     <li class="active"><a href="#home">Home</a></li>
     <li><a href="#coding">Coding Resources</a></li>
     <li><a href="#hackathon"> Hackathons </a></li>
-    <li><a href="#scholarship">Scholarship</a></li>
+    <li><a href="#fellowships">Fellowships</a></li>
     <li><a href="#startup">Startup Programs</a></li>
-    <li><a href="#events">Events</a></li>
+    <li><a href="#conferences">Conferences</a></li>
     <li><a href="#topcharts">Top Charts</a></li>
   </ul>
 
   <div class="tab-content">
     
-    <!-- Start of home section  -->
-
-    <div id="home" class="tab-pane fade in active">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    
-    <!-- end of home section -->
-
     <!-- Start of coding section  -->
 
     <div id="coding" class="tab-pane fade">
@@ -127,11 +119,12 @@
                   <select class="form-control" id="select-tag" name="ta">
                     <option>Yes</option>
                     <option>No</option>
+                    <option>Case by case basis</option>
                     <option>Partial</option> 
                   </select>
               </div>
 
-              <button type="submit" class="btn btn-warning">Upload Data</button>
+              <button type="submit" class="btn btn-success">Upload Data</button>
 
         </div>
 
@@ -143,30 +136,129 @@
 
     <!-- START OF Scholarship -->
 
-    <div id="scholarship" class="tab-pane fade">
-      <h3>Scholarship and Fellowship Programs</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    <div id="fellowships" class="tab-pane fade">
+      
+      <h3>Fellowships</h3>
+
+      <form action="#" method="POST">
+          <div class="form-container">
+
+               <div class="form-group">
+                  <label for="inputsm">Title</label>
+                  <input class="form-control" id="inputsm" name="title" type="text" required="true">
+                </div>
+  
+                <div class="form-group">
+                    <label for="inputsm">URL</label>
+                    <input class="form-control" id="inputsm" name="url" type="url" required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputsm">Location</label>
+                    <input class="form-control" id="inputsm" name="location" type="text" required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="select-tag">Eligiblity</label>
+                    <select class="form-control" id="select-tag" name="eligiblity" required="true">
+                      <option>Bachelors</option>
+                      <option>Masters</option>
+                      <option>PHD</option> 
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputsm">Submission Date</label>
+                    <input class="form-control" id="inputsm" name="date" type="date" required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="select-tag">Field</label>
+                    <select class="form-control" id="select-tag" name="ta">
+                      <option>Technology</option>
+                      <option>Arts and Science</option>
+                      <option>Social</option> 
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-success">Upload Data</button>
+  
+           </div>
+       
+      </form>
+    
+  </div>
+
+    <!-- END OF Fellowships -->
+
+  
+    <div id="conferences" class="tab-pane fade">
+            <h3>Conferences</h3>
+      
+            <div class="form-group">
+                <label for="inputsm">Title</label>
+                <input class="form-control" id="inputsm" name="title" type="text" required="true">
+            </div>
+      
+            <div class="form-group">
+                <label for="inputsm">URL</label>
+                <input class="form-control" id="inputsm" name="url" type="url" required="true">
+            </div>
+      
+            <div class="form-group">
+                <label for="inputsm">Location</label>
+                <input class="form-control" id="inputsm" name="location" type="text" required="true">
+            </div>
+      
+            <div class="form-group">
+                <label for="inputsm">Date</label>
+                <input class="form-control" id="inputsm" name="location" type="date" required="true">
+            </div>
+      
+            <div class="form-group">
+                <label for="select-tag">Field</label>
+                <select class="form-control" id="select-tag" name="field">
+                  <option>JavaScript</option>
+                  <option>Python</option>
+                  <option>Android</option> 
+                  <option>iOS</option>
+                  <option>AI</option>
+                  <option>Business</option>
+                  <option>Android</option>
+                  <option>Web</option>
+                  <option>Technology</option>
+                  <option>Sustainble Development</option>
+                  <option>Others</option>   
+                </select>
+            </div>
+      
+            <div class="form-group">
+                <label for="select-tag">Travel Reimbursment</label>
+                <select class="form-control" id="select-tag" name="ta">
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Case by case basis</option>
+                  <option>Partial</option>
+                </select>
+            </div>
+      
+            <button type="submit" class="btn btn-success">Upload Data</button>
     </div>
 
-    <!-- END OF Scholarship -->
     
+        
     <div id="startup" class="tab-pane fade">
-      <h3>Startup Programs</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
-    
-    <div id="events" class="tab-pane fade">
-      <h3>Events 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
+        <h3>Startup Programs</h3>
+      </div>
     
     <div id="topcharts" class="tab-pane fade">
       <h3>Top Charts</h3>
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
 
+  
+
   </div>
-</div>
 
 <script>
 $(document).ready(function(){

@@ -10,17 +10,21 @@ const conferenceSchema = new Schema({
         type: String,
         required:true
     },
-    place: {
-        type: String,
-        required:true
-    },
-    country: {
+    location: {
         type: String,
         required:true
     },
     eventDate: {
         type: String,
         required:true
+    },
+    field : {
+        type : String,
+        required : true 
+    },
+    travelReimbursment : {
+        type : String,
+        required : true
     },
     subscription: {
         type: Boolean,

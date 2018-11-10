@@ -6,27 +6,19 @@ const FellowshipSchema = new Schema({
         type: String,
         required:true
     },
-    link :{
+    url :{
         type: String,
         required:true
     },
-    place :{
-        type: String,
-        required:true
-    },
-    country :{
-        type: String,
-        required:true
-    },
-    field :{
+    location :{
         type: String,
         required:true
     },
     eligiblity :{
         type:String,
-        enum: ['Bachelors', 'Masters', 'PHD']
+        required : true
     },
-    applicationDeadline :{
+    date :{
         type: Date
     },
     active :{
@@ -40,13 +32,8 @@ const FellowshipSchema = new Schema({
     bookmark :{
         type: Boolean,
         default : false
-    },
-    // true - Online & false - InPerson
-    online :{
-        type: Boolean,
-        default : false
     }
-}) 
+});
 
 const FellowshipModel = mongoose.model('fellowship', FellowshipSchema);
 module.exports = FellowshipModel;

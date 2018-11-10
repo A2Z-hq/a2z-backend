@@ -5,7 +5,6 @@ const CodingResources = require('../models/coding');
 const Conference = require('../models/conference');
 const Hackathon = require('../models/hackathon');
 const Fellowship = require('../models/fellowship');
-const Scholarship = require('../models/scholarship');
 const OpenSourcePrograms  = require('../models/soc-programs');
 const TopCharts = require('../models/topcharts');
 
@@ -79,25 +78,6 @@ router.get('/fellowship', (req, res,next)=>{
         if(e) return res.status(404).send(e);
     });
 });
-
-
-// POST - /scholarship
-router.post('/scholarship', (req, res, next) => {
-    const { title, url, field } = req.body
-    Scholarship.create({ title, url, field })
-    .then(scholarship =>res.send(scholarship))
-    .catch(next);
-});
-
-// GET - /scholarship
-router.get('/fellowship', (req, res,next)=>{
-    Scholarship.find({}).then((docs)=>{
-        res.send(docs);
-    },(e)=>{
-        if(e) return res.status(404).send(e);
-    });
-});
-
 
 // POST - /open-source-programs
 router.post('/open-source-programs', (req, res, next)=>{
