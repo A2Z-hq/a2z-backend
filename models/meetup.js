@@ -7,7 +7,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const CommunitySchema = new Schema({
+const MeetupSchema = new Schema({
     title : {
         type: String,
         required:true
@@ -27,15 +27,11 @@ const CommunitySchema = new Schema({
         type: Boolean,
         default : true
     },
-    subscribe :{
-        type: Boolean,
-        default : false
-    },
     bookmark :{
         type: Boolean,
         default : false
     }
 });
 
-const CommunityModel = mongoose.model('community', CommunitySchema);
-module.exports = CommunityModel;
+const MeetupModel = mongoose.model('meetup', MeetupSchema);
+module.exports = MeetupModel;

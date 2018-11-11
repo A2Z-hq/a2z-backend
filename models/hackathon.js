@@ -10,14 +10,14 @@ const HackathonSchema = new Schema({
         type: String,
         required:true
     },
-    type : {
+    location : {
         type: String,
         required:true
     },
     date : {
         type: String
     },
-    location : {
+    type : {
         type: String,
         required:true
     },

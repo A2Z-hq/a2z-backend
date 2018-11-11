@@ -11,15 +11,16 @@ const CompetitonSchema = new Schema({
         type: String,
         required:true
     },
+    date : {
+        type: String
+    },
     field : {
         type: String,
         required:true
     },
-    date : {
-        type: String
-    },
     location : {
         type: String,
+        required :true
     },
     subscribe : {
         type: Boolean,

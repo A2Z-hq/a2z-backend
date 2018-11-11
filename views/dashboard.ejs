@@ -14,13 +14,24 @@
   <h2>GOD Mode</h2>
   
   <ul class="nav nav-tabs">
+      <!-- 1. Coding Resource -->
     <li class="active"><a href="#coding">Coding Resources</a></li>
+    
+    <!-- 2. Hackathon and Competition -->
     <li><a href="#hackathon"> Hackathons </a></li>
-    <li><a href="#fellowships">Fellowships</a></li>
-    <li><a href="#bootcamps">BootCamps</a></li>
-    <li><a href="#conferences">Conferences</a></li>
-    <li><a href="#community"> Developer Communities</a></li>
     <li><a href="#competiton">Competitons</a></li>
+    
+    <!-- 3.Events -->
+    <li><a href="#conferences">Conferences</a></li>
+    <li><a href="#meetup"> Meetups </a></li>
+    
+    <!-- 4. Fellowships Programs -->
+    <li><a href="#fellowships">Fellowships</a></li>
+    
+    <!-- 5. BootCamp -->
+    <li><a href="#bootcamps">BootCamps</a></li>
+
+    <!-- 5. Top Charts -->
     <li><a href="#topcharts">Top Charts</a></li>
 
   </ul>
@@ -252,7 +263,7 @@
 
     <!-- Start of Commmunity Section -->
 
-    <div id="community" class="tab-pane fade">
+    <div id="meetup" class="tab-pane fade">
         <h3>Developer Community</h3>
   
         <div class="form-group">
@@ -301,6 +312,23 @@
         </div>
 
         <div class="form-group">
+                <label for="inputsm">Date</label>
+                <input class="form-control" id="inputsm" name="date" type="date" required="true">
+        </div>
+
+        <div class="form-group">
+                <label for="select-tag">Field</label>
+                <select class="form-control" id="select-tag" name="field">
+                  <option>Technology</option>
+                  <option>Business</option>
+                  <option>Entrepreneurship</option>
+                  <option>Ideathon</option>
+                  <option>Design</option>
+                  <option>Mechanical</option>
+                </select>
+        </div>
+
+        <div class="form-group">
             <label for="select-tag">Location</label>
             <select class="form-control" id="select-tag" name="location">
               <option>Online</option>
@@ -310,17 +338,7 @@
         </div>      
   
 
-        <div class="form-group">
-            <label for="select-tag">Field</label>
-            <select class="form-control" id="select-tag" name="field">
-              <option>Technology</option>
-              <option>Business</option>
-              <option>Entrepreneurship</option>
-              <option>Ideathon</option>
-              <option>Design</option>
-              <option>Mechanical</option>
-            </select>
-        </div>
+        
         
         <button type="submit" class="btn btn-success">Upload Data</button>
 
